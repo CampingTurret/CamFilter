@@ -181,7 +181,7 @@ class FRCNN():
             while(self.Active):
             
                 frame = self.Q1.get()
-                print('CRNN')
+                print('RCNN')
                 if frame.create_time > time.time()-0.1:
                     self.Q2.put(self.Track_Face(frame))
                 if keyboard.is_pressed('m'):
